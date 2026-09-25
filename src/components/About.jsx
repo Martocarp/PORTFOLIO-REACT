@@ -3,6 +3,7 @@ function About() {
     <main id="hero">
       <h2>Sobre Mi</h2>
       <img
+        id="sobre-mi"
         src="https://soydelmillo.com/wp-content/uploads/2021/07/river-cave.jpg"
         alt="Ocampo Martiniano"
       />

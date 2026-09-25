@@ -233,14 +233,15 @@ img {
 ========================= */
 
 #sobre-mi img {
-  width: 100%;
-  max-height: 360px;
+  width: 70%;
+  max-width: 420px;
+  height: auto;
 
   object-fit: cover;
 
-  margin: 20px 0 25px;
+  margin: 20px auto 30px;
 
-  border-radius: 14px;
+  border-radius: 22px;
   border: 1px solid var(--border);
 
   filter: grayscale(20%);
@@ -613,4 +614,160 @@ button[type="submit"]:hover {
   .contact-card {
     width: 100%;
   }
+}
+/* =========================
+   TEMA OSCURO / CLARO
+========================= */
+
+.portfolio.dark {
+  --bg: #1b1b1b;
+  --bg-soft: #232629;
+  --panel: #2b3136;
+  --panel-2: #3a434b;
+
+  --text: #f5f5f5;
+  --text-soft: #aeb7bf;
+  --muted: #6d6a68;
+
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+.portfolio.light {
+  --bg: #eef2f7;
+  --bg-soft: #f8fbff;
+  --panel: #e4ebf3;
+  --panel-2: #d8e2ec;
+
+  --text: #243447;
+  --text-soft: #5d6b7a;
+  --muted: #8a98a8;
+  --accent: #00a128;
+
+  --border: rgba(90, 120, 150, 0.18);
+}
+
+/* =========================
+   APLICACIÓN DEL TEMA
+========================= */
+
+.portfolio {
+  background-color: var(--bg);
+  color: var(--text);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.left-column,
+.right-column {
+  background-color: var(--bg);
+  color: var(--text);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* textos principales */
+
+.hero h1,
+.hero h2,
+.right-column h2,
+.tech-card__title,
+.card-title {
+  color: var(--text) !important;
+}
+
+.hero p,
+.right-column p,
+.card-text,
+label {
+  color: var(--text-soft) !important;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.tech-card,
+.card,
+.contact-card,
+input,
+textarea {
+  background-color: var(--bg-soft) !important;
+  border-color: var(--border) !important;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.vertical-nav .nav-link {
+  color: var(--text-soft);
+}
+
+.vertical-nav .nav-link:hover {
+  color: var(--text);
+}
+
+/* =========================
+   BOTÓN CAMBIO DE TEMA
+========================= */
+
+.theme-button {
+  margin-top: 30px;
+
+  width: fit-content;
+
+  padding: 10px 16px;
+
+  background-color: var(--bg-soft);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.theme-button:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+textarea {
+  color: var(--text) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  border-top-color: var(--border);
+}
+
+.footer p {
+  color: var(--muted);
 }
