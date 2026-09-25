@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Tech from "./components/Tech";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
       <main className="right-column">
         <About />
+        <Tech />
         <Projects />
         <Contact />
         <Footer />

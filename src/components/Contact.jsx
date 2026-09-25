@@ -43,7 +43,7 @@ function Contact() {
         </div>
 
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Asunto</label>
           <input type="email" id="email" name="email" />
         </div>
 

@@ -6,10 +6,17 @@ function Projects() {
       <h2>Proyectos</h2>
 
       <ProjectCard
-        titulo="Portfolio React"
-        descripcion="Portfolio personal desarrollado con React y Vite."
+        titulo="Estudio Juridico SGR"
+        descripcion="Landing page de estudio juridico de Tucuman"
         tecnologias="HTML · CSS · JS"
         imagen="../../public/SGR.png"
+      />
+
+      <ProjectCard
+        titulo="Estudio Juridico KMA"
+        descripcion={"Landing page de estudio juridico de Tucuman"}
+        tecnologias={"HTML · CSS · JS"}
+        imagen="https://w0.peakpx.com/wallpaper/533/94/HD-wallpaper-missing-textures-garrysmod-gmod.jpg"
       />
 
       <ProjectCard
