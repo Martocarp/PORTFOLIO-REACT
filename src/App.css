@@ -232,19 +232,56 @@ img {
    SOBRE MÍ
 ========================= */
 
-#sobre-mi img {
-  width: 70%;
-  max-width: 420px;
-  height: auto;
+#sobre-mi {
+  margin-bottom: 120px;
+}
 
-  object-fit: cover;
-
-  margin: 20px auto 30px;
-
-  border-radius: 22px;
+.terminal {
+  background: #0d1117;
   border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  font-family: "JetBrains Mono", monospace;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
 
-  filter: grayscale(20%);
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #171b22;
+  border-bottom: 1px solid var(--border);
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5f6b7a;
+}
+
+.terminal-title {
+  margin-left: 10px;
+  color: #9da7b3;
+  font-size: 0.8rem;
+}
+
+.terminal-body {
+  padding: 22px;
+}
+
+.terminal-body p {
+  margin-bottom: 10px;
+}
+
+.prompt {
+  color: #00ff41;
+}
+
+.terminal-output {
+  color: #d7dee7;
+  padding-left: 18px;
 }
 
 /* =========================
@@ -633,7 +670,7 @@ button[type="submit"]:hover {
 }
 
 .portfolio.light {
-  --bg: #eef2f7;
+  --bg: #caced3;
   --bg-soft: #f8fbff;
   --panel: #e4ebf3;
   --panel-2: #d8e2ec;

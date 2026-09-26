@@ -1,22 +1,65 @@
 function About() {
   return (
-    <main id="hero">
-      <h2>Sobre Mi</h2>
-      <img
-        id="sobre-mi"
-        src="https://soydelmillo.com/wp-content/uploads/2021/07/river-cave.jpg"
-        alt="Ocampo Martiniano"
-      />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
-        illum quia repellendus ea sequi consequatur, sint dolores in deleniti
-        illo eveniet ipsam possimus, vel aliquid esse quae ipsum, perspiciatis
-        ad? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
-        consequuntur architecto molestias, veritatis officia nisi iusto ipsam
-        animi corporis eveniet aspernatur, similique debitis repudiandae atque
-        fugiat, soluta dolorem sint dolores.
-      </p>
-    </main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+
+      <div className="terminal">
+        <div className="terminal-header">
+          <span className="terminal-dot"></span>
+          <span className="terminal-dot"></span>
+          <span className="terminal-dot"></span>
+
+          <span className="terminal-title">martiniano@maoc:~</span>
+        </div>
+
+        <div className="terminal-body">
+          <p>
+            <span className="prompt">┌──(martiniano㉿maoc)-[~]</span>
+          </p>
+
+          <p>
+            <span className="prompt">└─$ whoami</span>
+          </p>
+
+          <p className="terminal-output">Martiniano Ocampo</p>
+
+          <p>
+            <span className="prompt">└─$ profile</span>
+          </p>
+
+          <p className="terminal-output">
+            Soy Martiniano Ocampo, desarrollador web en formación con interés en
+            el desarrollo Full Stack y la ciberseguridad. Me gusta crear
+            interfaces claras, funcionales y cuidadas, prestando atención tanto
+            a la experiencia del usuario como a la calidad del código. <br />
+            <br />
+            Disfruto especialmente trabajar en proyectos donde se combinan
+            diseño, lógica y resolución de problemas, buscando siempre que cada
+            detalle tenga un propósito. Actualmente continúo ampliando mis
+            conocimientos en tecnologías web, desarrollo de aplicaciones y
+            hacking ético, con el objetivo de seguir creciendo y construyendo
+            soluciones cada vez más completas
+          </p>
+
+          <p>
+            <span className="prompt">└─$ technologies</span>
+          </p>
+
+          <p className="terminal-output">
+            HTML · CSS · JavaScript · React · Git/GitHub · Linux
+          </p>
+
+          <p>
+            <span className="prompt">└─$ status</span>
+          </p>
+
+          <p className="terminal-output">
+            Aprendiendo, creando proyectos y mejorando continuamente.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
+
 export default About;

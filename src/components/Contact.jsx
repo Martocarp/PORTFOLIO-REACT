@@ -32,6 +32,8 @@ function Contact() {
         </a>
       </div>
 
+      <h2>Desarrollemos tu idea JUNTOS</h2>
+
       <form
         action="mailto:marto.github@gmail.com"
         method="post"
